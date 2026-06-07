@@ -61,7 +61,7 @@
   .section-title em { font-style: italic; color: var(--green); }
   .section-body { font-size: 16px; line-height: 1.9; color: var(--earth); max-width: 560px; font-weight: 300; }
 
-  /* ── NUEVO: PROBLEMAS ── */
+  /* PROBLEMAS */
   .problemas { background: var(--cream); }
   .problemas-inner { max-width: 1100px; margin: 0 auto; }
   .problemas-header { text-align: center; margin-bottom: 70px; }
@@ -73,7 +73,7 @@
   .problema-title { font-family: var(--font-serif); font-size: 22px; font-weight: 400; color: var(--bark); margin-bottom: 12px; }
   .problema-desc { font-size: 14px; line-height: 1.8; color: var(--earth); font-weight: 300; }
 
-  /* ── NUEVO: TRANSFORMACIÓN ── */
+  /* TRANSFORMACIÓN */
   .transformacion { background: var(--ruah-dark); padding: 100px 60px; }
   .transformacion-inner { max-width: 1000px; margin: 0 auto; }
   .transformacion-label { font-size: 10px; letter-spacing: 5px; text-transform: uppercase; color: var(--ruah-copper); margin-bottom: 20px; display: block; }
@@ -90,7 +90,27 @@
   .trans-item.d .trans-dot { background: #6DD894; }
   .trans-arrow { text-align: center; font-size: 28px; color: var(--ruah-copper); }
 
-  /* ── NUEVO: RUTA ── */
+  /* RUAH — eje principal */
+  .ruah { background: var(--ruah-dark); position: relative; overflow: hidden; padding: 160px 60px; }
+  .ruah::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 50%, rgba(160,104,64,0.12) 0%, transparent 60%), radial-gradient(ellipse at 70% 20%, rgba(46,125,50,0.08) 0%, transparent 50%); }
+  .ruah-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; position: relative; z-index: 1; }
+  .ruah-label { font-size: 10px; letter-spacing: 6px; text-transform: uppercase; color: var(--ruah-copper); margin-bottom: 16px; display: block; }
+  .ruah-title { font-family: var(--font-serif); font-size: clamp(48px, 5vw, 80px); font-weight: 300; color: var(--cream); line-height: 1.05; margin-bottom: 16px; }
+  .ruah-title em { font-style: italic; color: var(--ruah-copper); }
+  .ruah-meaning { font-family: var(--font-serif); font-size: 13px; font-style: italic; color: rgba(247,243,238,0.35); margin-bottom: 32px; letter-spacing: 1px; }
+  .ruah-body { font-size: 16px; line-height: 1.9; color: rgba(247,243,238,0.55); margin-bottom: 36px; font-weight: 300; }
+  .ruah-fases { display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px; }
+  .ruah-fase { border-left: 2px solid var(--ruah-copper); padding: 10px 16px; background: rgba(255,255,255,0.04); }
+  .ruah-fase h4 { font-family: var(--font-serif); font-size: 17px; color: var(--cream); font-weight: 400; margin-bottom: 4px; }
+  .ruah-fase p { font-size: 13px; color: rgba(247,243,238,0.5); font-weight: 300; }
+  .btn-ruah { display: inline-block; border: 1px solid var(--ruah-copper); color: var(--ruah-copper); padding: 16px 44px; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: all 0.3s; }
+  .btn-ruah:hover { background: var(--ruah-copper); color: var(--cream); }
+  .ruah-visual { display: flex; align-items: center; justify-content: center; }
+  .ruah-circle { width: 360px; height: 360px; border-radius: 50%; border: 1px solid rgba(160,104,64,0.25); display: flex; align-items: center; justify-content: center; position: relative; }
+  .ruah-circle::before { content: ''; position: absolute; inset: 20px; border-radius: 50%; border: 1px solid rgba(160,104,64,0.15); }
+  .ruah-word { font-family: var(--font-serif); font-size: 80px; font-weight: 300; color: rgba(247,243,238,0.08); letter-spacing: 10px; }
+
+  /* RUTA */
   .ruta { background: var(--cream-deep); }
   .ruta-inner { max-width: 1100px; margin: 0 auto; }
   .ruta-header { text-align: center; margin-bottom: 80px; }
@@ -102,27 +122,6 @@
   .step-num { font-family: var(--font-serif); font-size: 20px; color: var(--green); font-weight: 400; }
   .step-title { font-family: var(--font-serif); font-size: 18px; color: var(--bark); margin-bottom: 10px; font-weight: 400; }
   .step-text { font-size: 13px; color: var(--earth); line-height: 1.7; font-weight: 300; }
-
-  /* RUAH — eje principal */
-  .ruah { background: var(--ruah-dark); position: relative; overflow: hidden; padding: 160px 60px; }
-  .ruah::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 50%, rgba(160,104,64,0.12) 0%, transparent 60%), radial-gradient(ellipse at 70% 20%, rgba(46,125,50,0.08) 0%, transparent 50%); }
-  .ruah-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; position: relative; z-index: 1; }
-  .ruah-label { font-size: 10px; letter-spacing: 6px; text-transform: uppercase; color: var(--ruah-copper); margin-bottom: 16px; display: block; }
-  .ruah-title { font-family: var(--font-serif); font-size: clamp(48px, 5vw, 80px); font-weight: 300; color: var(--cream); line-height: 1.05; margin-bottom: 16px; }
-  .ruah-title em { font-style: italic; color: var(--ruah-copper); }
-  .ruah-meaning { font-family: var(--font-serif); font-size: 13px; font-style: italic; color: rgba(247,243,238,0.35); margin-bottom: 32px; letter-spacing: 1px; }
-  .ruah-body { font-size: 16px; line-height: 1.9; color: rgba(247,243,238,0.55); margin-bottom: 36px; font-weight: 300; }
-  /* Fases dentro de RUAH */
-  .ruah-fases { display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px; }
-  .ruah-fase { border-left: 2px solid var(--ruah-copper); padding: 10px 16px; background: rgba(255,255,255,0.04); }
-  .ruah-fase h4 { font-family: var(--font-serif); font-size: 17px; color: var(--cream); font-weight: 400; margin-bottom: 4px; }
-  .ruah-fase p { font-size: 13px; color: rgba(247,243,238,0.5); font-weight: 300; }
-  .btn-ruah { display: inline-block; border: 1px solid var(--ruah-copper); color: var(--ruah-copper); padding: 16px 44px; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: all 0.3s; }
-  .btn-ruah:hover { background: var(--ruah-copper); color: var(--cream); }
-  .ruah-visual { display: flex; align-items: center; justify-content: center; }
-  .ruah-circle { width: 360px; height: 360px; border-radius: 50%; border: 1px solid rgba(160,104,64,0.25); display: flex; align-items: center; justify-content: center; position: relative; }
-  .ruah-circle::before { content: ''; position: absolute; inset: 20px; border-radius: 50%; border: 1px solid rgba(160,104,64,0.15); }
-  .ruah-word { font-family: var(--font-serif); font-size: 80px; font-weight: 300; color: rgba(247,243,238,0.08); letter-spacing: 10px; }
 
   /* TERAPIAS */
   .terapias { background: var(--cream); }
@@ -167,8 +166,9 @@
   .testimonio-text { font-size: 15px; color: var(--earth); line-height: 1.9; margin-bottom: 28px; padding-top: 20px; font-weight: 300; font-style: italic; }
   .testimonio-autor { display: flex; gap: 14px; align-items: center; }
   .testimonio-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--green); color: white; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 20px; flex-shrink: 0; }
-  .testimonio-nombre { font-size: 15px; color: var(--bark); }
-  .testimonio-tag { font-size: 11px; letter-spacing: 1px; color: var(--stone); text-transform: uppercase; }
+  .testimonio-nombre { font-size: 15px; color: var(--bark); font-weight: 400; }
+  .testimonio-meta { font-size: 12px; color: var(--stone); margin-top: 3px; }
+  .testimonio-tag { font-size: 11px; letter-spacing: 1px; color: var(--green); text-transform: uppercase; margin-top: 4px; display: block; }
 
   /* FUNDADOR */
   .fundador { background: var(--cream); }
@@ -177,7 +177,11 @@
   .fundador-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
   .fundador-label { font-size: 10px; letter-spacing: 5px; text-transform: uppercase; color: var(--green); margin-bottom: 20px; display: block; }
   .fundador-name { font-family: var(--font-serif); font-size: clamp(36px, 3.5vw, 54px); font-weight: 300; color: var(--bark); margin-bottom: 8px; }
-  .fundador-role { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--stone); margin-bottom: 40px; font-weight: 400; }
+  .fundador-role { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--stone); margin-bottom: 24px; font-weight: 400; }
+  /* NUEVO: diferencial destacado */
+  .fundador-diferencial { background: rgba(46,125,50,0.07); border-left: 3px solid var(--green); padding: 16px 20px; margin-bottom: 28px; }
+  .fundador-diferencial p { font-size: 14px; color: var(--earth); line-height: 1.7; }
+  .fundador-diferencial strong { color: var(--green); font-weight: 500; }
   .fundador-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
   .fundador-chip { border: 1px solid var(--green); color: var(--green); padding: 4px 12px; border-radius: 20px; font-size: 12px; }
   .fundador-body { font-size: 16px; line-height: 1.9; color: var(--earth); font-weight: 300; margin-bottom: 40px; }
@@ -276,7 +280,7 @@
   <div class="hero-content">
     <span class="hero-eyebrow">Bogotá, Colombia · Centro Holointegrativo</span>
     <h1 class="hero-title">Recupera tu <em>energía,</em><br>tu equilibrio<br>y tu claridad</h1>
-    <p class="hero-sub">Un ecosistema de bienestar donde ciencia, cuerpo, emoción y conciencia trabajan juntos para que restaures tu vitalidad desde adentro.</p>
+    <p class="hero-sub">Acompañamos personas que viven con estrés, agotamiento, ansiedad o dolor crónico a recuperar energía, claridad y bienestar integral.</p>
     <div class="hero-btns">
       <a href="#ruah" class="btn-primary">Experiencia RUAH</a>
       <a href="#problemas" class="btn-outline">¿Esto es para ti?</a>
@@ -331,7 +335,26 @@
   </div>
 </section>
 
-<!-- RUTA DEL CLIENTE -->
+<!-- RUAH — PRODUCTO ESTRELLA (ahora antes de Ruta) -->
+<section class="ruah" id="ruah">
+  <div class="ruah-inner">
+    <div>
+      <span class="ruah-label">La solución · Experiencia insignia</span>
+      <h2 class="ruah-title">Descubre<br><em>RUAH</em></h2>
+      <p class="ruah-meaning">רוּחַ — Del hebreo: aliento, espíritu, viento vital</p>
+      <p class="ruah-body">RUAH es nuestra experiencia premium. Una sesión de 3 a 4 horas que integra diagnóstico, restauración corporal y reconexión emocional en un solo proceso diseñado para ti. No es una terapia suelta — es la puerta de entrada más poderosa a tu proceso de bienestar.</p>
+      <div class="ruah-fases">
+        <div class="ruah-fase"><h4>Fase I — Diagnóstico integral</h4><p>Iridología y evaluación bioenergética para mapear tu estado real.</p></div>
+        <div class="ruah-fase"><h4>Fase II — Restauración corporal</h4><p>Protocolo de terapias físicas: masaje, hipertermia o biomagnetismo según tu diagnóstico.</p></div>
+        <div class="ruah-fase"><h4>Fase III — Integración y cierre</h4><p>Acompañamiento emocional y plan personalizado de continuidad.</p></div>
+      </div>
+      <a href="https://wa.me/573144114302?text=Hola,%20quiero%20agendar%20la%20experiencia%20RUAH" class="btn-ruah" target="_blank">Agendar experiencia RUAH</a>
+    </div>
+    <div class="ruah-visual"><div class="ruah-circle"><span class="ruah-word">רוּחַ</span></div></div>
+  </div>
+</section>
+
+<!-- RUTA DEL CLIENTE (ahora después de RUAH) -->
 <section class="ruta">
   <div class="ruta-inner">
     <div class="ruta-header fade-in">
@@ -346,25 +369,6 @@
       <div class="step fade-in"><div class="step-dot"><span class="step-num">IV</span></div><h3 class="step-title">Seguimiento</h3><p class="step-text">Ajustamos el proceso según tu evolución.</p></div>
       <div class="step fade-in"><div class="step-dot"><span class="step-num">V</span></div><h3 class="step-title">Comunidad</h3><p class="step-text">Retiros y programas para mantener tu bienestar.</p></div>
     </div>
-  </div>
-</section>
-
-<!-- RUAH — PRODUCTO ESTRELLA -->
-<section class="ruah" id="ruah">
-  <div class="ruah-inner">
-    <div>
-      <span class="ruah-label">Experiencia insignia · Lo más completo que ofrecemos</span>
-      <h2 class="ruah-title">Descubre<br><em>RUAH</em></h2>
-      <p class="ruah-meaning">רוּחַ — Del hebreo: aliento, espíritu, viento vital</p>
-      <p class="ruah-body">RUAH es nuestra experiencia premium. Una sesión de 3 a 4 horas que integra diagnóstico, restauración corporal y reconexión emocional en un solo proceso diseñado para ti. No es una terapia suelta — es la puerta de entrada más poderosa a tu proceso de bienestar.</p>
-      <div class="ruah-fases">
-        <div class="ruah-fase"><h4>Fase I — Diagnóstico integral</h4><p>Iridología y evaluación bioenergética para mapear tu estado real.</p></div>
-        <div class="ruah-fase"><h4>Fase II — Restauración corporal</h4><p>Protocolo de terapias físicas: masaje, hipertermia o biomagnetismo según tu diagnóstico.</p></div>
-        <div class="ruah-fase"><h4>Fase III — Integración y cierre</h4><p>Acompañamiento emocional y plan personalizado de continuidad.</p></div>
-      </div>
-      <a href="https://wa.me/573144114302?text=Hola,%20quiero%20agendar%20la%20experiencia%20RUAH" class="btn-ruah" target="_blank">Agendar experiencia RUAH</a>
-    </div>
-    <div class="ruah-visual"><div class="ruah-circle"><span class="ruah-word">רוּחַ</span></div></div>
   </div>
 </section>
 
@@ -427,15 +431,36 @@
     <div class="testimonios-grid">
       <div class="testimonio-card fade-in">
         <p class="testimonio-text">Llevaba meses con migraña constante y nada funcionaba. Después de tres sesiones con Iván empecé a dormir mejor y el dolor disminuyó notablemente. Lo que hace va mucho más allá de lo que esperas.</p>
-        <div class="testimonio-autor"><div class="testimonio-avatar">M</div><div><div class="testimonio-nombre">María C.</div><div class="testimonio-tag">Migraña crónica</div></div></div>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar">M</div>
+          <div>
+            <div class="testimonio-nombre">María C.</div>
+            <div class="testimonio-meta">42 años · Docente</div>
+            <span class="testimonio-tag">Migraña crónica</span>
+          </div>
+        </div>
       </div>
       <div class="testimonio-card fade-in">
         <p class="testimonio-text">Llegué con mucho estrés y una sensación de agotamiento total. La experiencia RUAH fue reveladora. No esperaba salir sintiéndome tan liviano y con tanta claridad mental.</p>
-        <div class="testimonio-autor"><div class="testimonio-avatar">J</div><div><div class="testimonio-nombre">Julián R.</div><div class="testimonio-tag">Experiencia RUAH</div></div></div>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar">J</div>
+          <div>
+            <div class="testimonio-nombre">Julián R.</div>
+            <div class="testimonio-meta">35 años · Empresario</div>
+            <span class="testimonio-tag">Experiencia RUAH</span>
+          </div>
+        </div>
       </div>
       <div class="testimonio-card fade-in">
         <p class="testimonio-text">Lo que más me sorprendió fue el enfoque integral. No es solo una terapia — es un proceso completo que te mira como persona. Zanatte es diferente a todo lo que había probado.</p>
-        <div class="testimonio-autor"><div class="testimonio-avatar">A</div><div><div class="testimonio-nombre">Andrea M.</div><div class="testimonio-tag">Programa de bienestar</div></div></div>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar">A</div>
+          <div>
+            <div class="testimonio-nombre">Andrea M.</div>
+            <div class="testimonio-meta">38 años · Psicóloga</div>
+            <span class="testimonio-tag">Programa de bienestar</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -453,12 +478,17 @@
       <span class="fundador-label">El fundador</span>
       <h2 class="fundador-name">Iván Alejandro Ruiz</h2>
       <p class="fundador-role">Terapeuta Holointegrativo · Fundador de Zanatte</p>
+      <!-- NUEVO: diferencial destacado -->
+      <div class="fundador-diferencial">
+        <p><strong>Ingeniero Mecatrónico + Terapeuta Holointegrativo.</strong> Una combinación rarísima que le permite leer el cuerpo humano con la precisión de un ingeniero y la sensibilidad de un terapeuta. Muy pocos profesionales en el mundo integran estas dos dimensiones.</p>
+      </div>
       <div class="fundador-chips">
         <span class="fundador-chip">Ingeniero Mecatrónico</span>
+        <span class="fundador-chip">Terapeuta Holointegrativo</span>
         <span class="fundador-chip">Herbolario</span>
         <span class="fundador-chip">+5 años de experiencia</span>
       </div>
-      <p class="fundador-body">Iván integra la precisión de la ingeniería con el conocimiento profundo de las tradiciones terapéuticas. Su camino comenzó desde una búsqueda personal profunda: entender por qué las personas se enferman y qué necesitan realmente para restaurarse.<br><br>Durante años integró herramientas de la medicina natural, la psicoterapia emocional, la iridología y las terapias energéticas en un modelo propio que hoy es el corazón de Zanatte.</p>
+      <p class="fundador-body">Su camino comenzó desde una búsqueda personal profunda: entender por qué las personas se enferman y qué necesitan realmente para restaurarse. Durante años integró herramientas de la medicina natural, la psicoterapia emocional, la iridología y las terapias energéticas en un modelo propio que hoy es el corazón de Zanatte.</p>
       <blockquote class="fundador-quote">"Sana tu cuerpo. Sana tu mente.<br>Sana tu alma."</blockquote>
       <a href="https://www.ivanruizholistico.com" class="fundador-link" target="_blank">Conocer la historia completa de Iván →</a>
     </div>
